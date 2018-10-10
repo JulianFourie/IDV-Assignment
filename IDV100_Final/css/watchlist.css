@@ -31,7 +31,7 @@ body {
     background-color: black;
     float: left;
     margin: 10px;
-    margin-left: 35%
+    margin-left: 32%;
 }
 
 .logo h2{
@@ -42,7 +42,7 @@ body {
 .filter{
     width: 100%;
     height: auto;
-    background-color: aquamarine;
+    background-color: aqua;
     float: left;
 }
 
@@ -56,14 +56,14 @@ body {
 
 .fifth {
     width: 20%;
-    height: 50px;
+    height: 70px;
     float: left;
     border: 0px 1px;
     border-color: black;
 }
 
 .fifth h2{
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 0%;
     text-align: center;
     border: 2px;
@@ -76,5 +76,33 @@ body {
 .main {
     width: 100%;
     height: auto;
+    background-color: brown;
     float: left;
+}
+
+.WL-title{
+    text-align: center;
+}
+
+.divider{
+    width: 100%;
+    height 50px;
+    background-color: burlywood;
+    float: left;
+}
+
+.row{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    float: left;
+}
+
+.movie-con {
+    width: 25%;
+    height: 200px;
+    background-color: aqua;
+    float: left;
+    margin: 4%;
+    text-align: center;
 }
