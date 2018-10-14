@@ -1,0 +1,70 @@
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat",sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(100,100,100);
+    float: left;
+}
+
+.filter{
+    margin: 40px 5% 0px;
+    float: left;
+}
+
+.logo{
+    width: 100px;
+    height: 70px;
+    opacity: 1;
+    float: left;
+    margin: 0px 27%;
+}
+
+.nav-bar{
+    width: 100%;
+    height: auto;
+    background-color: rgb(100,100,100);
+    float: left;
+}
+
+.nav-con{
+    width: 90%;
+    height: 60px;
+    float: left;
+    margin-left: 5%;
+}
+
+.selection{
+    width: 17%;
+    height: 50px;
+    background-color: black;
+    float: left;
+    border: 1%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+
+.selection h3{
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    background-color: rgb(150, 150, 150);
+    float: left;
+}
+
+.row{
+    width: 100%;
+    
+}
