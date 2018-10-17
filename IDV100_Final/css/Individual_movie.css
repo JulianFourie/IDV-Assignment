@@ -87,21 +87,43 @@ body{
 .movie-type{
     width: 500px;
     height: auto;
-    margin-left: 310px;
+    margin-left: 275px;
     float: left;
     color: dimgray;
 }
 
 .star-rating{
-    width: 238px;
-    height: 42px;
+    width: 600px;
+    height: 50px;
     background-image: url(../img/rating.png);
     float: left;
-    margin-left: 370px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 190px;
     margin-top: 20px;
 }
 
 .movie-info-box{
-    background-color: aqua;
+    width: 20%;
+    height: 140px;
     float: left;
+}
+
+.movie-info-box h2{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.movie-info-box h1{
+    text-align: center;
+}
+
+.movie-description{
+    width: 850px;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 57px;
+    text-align: center;
+    float: left
 }
