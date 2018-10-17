@@ -1,4 +1,0 @@
-1 Make a folder with your name.
-2 Paste all your code files in your folder
-3 Example in Julian folder
-4 Don't worry about linking the files together to make the site for now, Julian will do it ;)
