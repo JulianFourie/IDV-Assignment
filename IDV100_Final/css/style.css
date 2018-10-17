@@ -31,8 +31,7 @@ padding: 100px;
 }
                    
 .accordion {
-    -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-    -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+  
     box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
     font-family: Arial, Helvetica, sans-serif;
     border-color: #505050;
@@ -49,6 +48,7 @@ padding: 100px;
 .accordion-content,
 .accordion-separator {
     float: left;
+    
 }
 
 .accordion > ul > li {
@@ -57,44 +57,31 @@ padding: 100px;
     margin-bottom: -0px;
 }
 
-.accordion-select:checked ~ .accordion-separator {
+.accordion-select:checked ~ 
+.accordion-separator {
     margin-right: 700px;
     margin-bottom: 0px;
 }
 
 .accordion-title,
 .accordion-select  {
-    background-color: #2d2d2d;
+    background-color:#008384;
     color: #ffffff;
     width: 200px;
     height: 290px;
     font-size: 15px;
+    text-align: center;
     
 }
 
-.accordion-title span {
-    margin-bottom: 20px; 
-    margin-left: 20px;
+
+.accordion-select:hover .accordion-title,
+.accordion-select:checked .accordion-title {
+    background-color: #008384;
 }
 
-.accordion-select:hover ~ .accordion-title,
-.accordion-select:checked ~ .accordion-title {
-    background-color: #3068cc;
-}
-
-.accordion-title span  {	
-    transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -ms-writing-mode: lr-bt;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    margin-left: 0px;
-    line-height: 40px;
-}
 
 .accordion-content {
-    background-color: #3e3e3e;
     color: #f5f2f0;
     height: 234px;
     width: 644px;
@@ -107,17 +94,11 @@ padding: 100px;
     margin-bottom: 1px;
 }
 
-/* Do not change following properties, they aren't 
-generated automatically and are common for each slider. */
-.accordion {
-    overflow: hidden;
-}
-
 .accordion > ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 101%;
+    width: 100%;
 }
 
 .accordion > ul > li,
