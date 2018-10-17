@@ -1,0 +1,109 @@
+.header {
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: black;
+}
+
+.body-cont{
+    background-color: black;
+}
+
+nav img {
+    width: 100%;
+    max-width: 75px;
+    align-content: top;
+    padding: 15px;
+    
+}
+
+.navigation-buttons li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    float: right;
+    padding: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navigation-buttons a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+}
+
+
+li.current{
+    color: gray;
+}
+
+.footer{
+     width: 100%;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.column-footer-1 p{
+    font-size: 10px;
+    padding: 13px;
+}
+
+.column-footer-2 p{
+    font-size: 10px;
+    padding: 13px;
+}
+
+.social-media-icons{
+    float: right;
+}
+
+.pinterest {
+    float: right;
+}
+
+.instagram {
+    float: right;
+}
+
+.facebook {
+    float: right;
+}
+
+.twitter {
+    float: right;
+}
+
+.pinterest img{
+    float: right;
+    height: 40px;
+    padding: 7px;
+}
+
+.instagram img{
+    float: right;
+    height: 40px;
+    padding: 7px;
+}
+
+.facebook img{
+    float: right;
+    height: 40px;
+    padding: 7px;
+}
+
+.twitter img{
+    float: right;
+    height: 40px;
+    padding: 7px;
+}
