@@ -8,45 +8,37 @@
     
     <body>
         <div class="outer-con">
-
-             <div class="login-site">
-                   <div class="landing">
-                        <h1>GALAXY</h1>
-                        <h2>MOVIES</h2>
-                       <p>Hi there humans, welcome to the galaxy movies<br> website that will offer you out of this world movies.<br> create an account with us by signing up or <br>login if you have an existing account.</p>
-                    </div><!--landing-->
-                 
-                   <div class="login">
-                        <h1>GALAXY</h1>
-                        <h2>MOVIES</h2>
-                       <form style="margin-top: 40px;margin-left: 30px;">
-                              USERNAME<br>
-                              <input type="text" name="firstname"><br>
-                               PASSWORD<br>
-                              <input type="text" name="lastname">
-                       </form>
-                 
-                 </div><!--login-->
-                 
-                 <div class="sign-up">
-                     <h1>GALAXY</h1>
-                        <h2>MOVIES</h2>
-                      <form style="margin-top: 40px;margin-left: 30px;">
-                              FIRST NAME<br>
-                              <input type="text" name="firstname"><br>
-                               USERNAME<br>
-                              <input type="text" name="user">
-                              PASSWORD<br>
-                              <input type="text" name="pass">
-                          CONFIRM PASSWORD<br>
-                              <input type="text" name="pass-con">
-                       </form>
-                 
+            
+            <div class="accordion">
+                 <ul>
+                     <li>
+                        <input type="radio" name="select" class="accordion-select"/>
+                              <div class="accordion-title">
+                                 <span>Galaxy movies</span>
+                              </div>
+            <div class="accordion-content">
+                Content
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
                      
-                 
-                 </div><!--sign-up-->
-                 
-             </div><!--login-site-->
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title">
+                <span>Title</span>
+            </div>
+            <div class="accordion-content">
+                Content
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+                     
+       
+    </ul>
+</div>
+
+           
+            
             
         </div><!--outer-con-->
     </body>
