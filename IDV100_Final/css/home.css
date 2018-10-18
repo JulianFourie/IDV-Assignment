@@ -184,6 +184,9 @@ h2{
     background-size: cover;
     margin: auto;
 }
+.poster{
+    width: 20px;
+}
 .poster-img2{
     width: 280px;
     height: 400px;
