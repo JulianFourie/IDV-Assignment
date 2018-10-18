@@ -9,6 +9,44 @@ $(function(){
         $(this).attr("src", "../img/logo_white.png");
     });
     
+    $(".navigation-buttons").find("li").on("mouseenter", function(){
+            $(this).parent().removeClass("navigation-buttons");
+            $(this).parent().addClass("navigation-buttons-hover");
+        });
+    
+    $(".navigation-buttons").find("li").on("mouseleave", function(){
+            $(this).parent().removeClass("navigation-buttons-hover");
+            $(this).parent().addClass("navigation-buttons");
+        });
+    
+        $(".hover").hide();
+  
+    
+    $(".movie").on("mouseenter", function(){
+        $(this).find(".hover").show();
+    });
+    
+    $(".movie").on("mouseleave", function(){
+        $(this).find(".hover").hide();
+    });
+    
+     $(".remove-btn").on("click", function(){
+        $(this).closest(".movie").fadeOut(500);
+    });
+                   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     $(".pinterest").find("img").on("mouseenter", function(){
             $(this).attr("src", "../img/pin_hover.png");
         });
