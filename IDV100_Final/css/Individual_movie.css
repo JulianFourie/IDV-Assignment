@@ -90,10 +90,12 @@ li.current{
     float: right;
 }
 
+.title{
+    background-color: aqua;
+}
+
 .movie-title{
-    width: 400px;
     height: auto;
-    margin-left: 290px;
     text-align: center;
     float: left
 }
