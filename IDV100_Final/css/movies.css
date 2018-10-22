@@ -87,6 +87,13 @@ body {
     width: auto;
     height: 350px;
     background-color: aqua;
+    overflow-y: hidden;
+}
+
+.nav-con-inner{
+    height: 330px;
+    width: 3000px;
+    
 }
 
 .movie{
