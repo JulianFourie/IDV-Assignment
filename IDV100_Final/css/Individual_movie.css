@@ -1,6 +1,8 @@
 body{
+    width: 100%;
     margin: 0px;
     padding: 0px;
+    border: 0px;
     font-family: "Montserrat",sans-serif;
 }
 
@@ -93,8 +95,21 @@ li.current{
 .space-1{
     height: 186px;
 }
+
 .space-2{
     height: 63px;
+}
+
+.space-3{
+    height: 50px;
+}
+
+.space-4{
+    height: 50px;
+}
+
+.space-5{
+    height: 50px;
 }
 
 .title{
@@ -121,30 +136,29 @@ li.current{
     color: dimgray;
 }
 
-.star-rating{
-    width: 600px;
+.rating-title{
     height: 50px;
-    background-image: url(../img/rating.png);
+    background-color: blueviolet;
     float: left;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 190px;
-    margin-top: 20px;
-}
-
-.movie-info-box{
-    width: 20%;
-    height: 140px;
-    float: left;
-}
-
-.movie-info-box h2{
     text-align: center;
-    margin-top: 40px;
 }
 
-.movie-info-box h1{
+.rating{
+    height: 50px;
+    background-color: coral;
+    text-align: center;
+    float: left;
+}
+
+.movie-info-title{
+    height: 50px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.movie-info{
+    height: 50px;
+    background-color: aquamarine;
     text-align: center;
 }
 
