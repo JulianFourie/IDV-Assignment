@@ -25,15 +25,24 @@ body {
     background-image: url(../img/astrology-astronomy-ball-shaped-1114900.jpg);
     background-size: cover;
 }
-
-.body-cont{
-    background-color: black;
+h3{
+    font-family: 'Righteous', cursive;
+    color: #009298;
+    text-align: center;
+}
+h1{
+    font-family: 'Righteous', cursive;
+    color: #009298;
+    font-size: 50px;
+   
 }
 
+
+
 nav{
-    
     padding-left: 10px;
     float: left;
+    background-color: black;
 }
 
 nav img {
@@ -85,6 +94,24 @@ nav img {
 li.current{
     color: gray;
 }
+.row{
+    overflow-x: auto;
+    display: flex;
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    
+}
+.flexcroll {     
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+}
 
 .poster-1{
     width: 280px;
@@ -96,14 +123,14 @@ li.current{
 .poster-2{
     width: 280px;
     height: 400px;
-    background-image: url(../img/poster1.jpg);
+    background-image: url(../img/poster%209.jpg);
     background-size: cover;
     margin-left: 20px;
 }
 .poster-3{
     width: 280px;
     height: 400px;
-    background-image: url(../img/poster1.jpg);
+    background-image: url(../img/poster6.jpg);
     background-size: cover;
     margin-left: 20px;
 }
