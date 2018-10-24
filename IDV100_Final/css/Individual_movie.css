@@ -58,8 +58,19 @@ li.current{
 }
 
 
-.video{
+#video-con-xs{
+    height: 500px;
+    float: left;
     background-color: grey;
+}
+
+#video-con-md{
+    height: 500px;
+    background-color: grey;
+}
+
+#video-con-lg{
+    height: 500px;
 }
 
 .add-share-con{
@@ -112,14 +123,20 @@ li.current{
     height: 50px;
 }
 
+.spacer{
+    height: 50px;
+}
+
 .title{
-    background-color: aqua;
     float: left;
 }
 
 .movie-con{
     height: 350px;
-    background-color: grey;
+    background-image: url(../img/nutcracker-and-the-four-realms.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     float: left;
 }
 
@@ -132,41 +149,34 @@ li.current{
 .movie-type{
     height: auto;
     float: left;
-    background-color: beige;
     color: dimgray;
 }
 
 .rating-title{
     height: 50px;
-    background-color: blueviolet;
     float: left;
     text-align: center;
 }
 
 .rating{
     height: 50px;
-    background-color: coral;
     text-align: center;
     float: left;
 }
 
 .movie-info-title{
     height: 50px;
-    background-color: aqua;
     text-align: center;
 }
 
 .movie-info{
     height: 50px;
-    background-color: aquamarine;
     text-align: center;
 }
 
 .movie-description{
-    width: 850px;
     height: auto;
     margin-top: 40px;
-    margin-left: 57px;
     text-align: center;
     float: left
 }
