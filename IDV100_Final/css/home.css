@@ -13,9 +13,10 @@ body {
 }
 .header-slider{
     width: 400px;
-    height: 300px;
+    height: 30vh;
     background-image: url(../img/astrology-astronomy-ball-shaped-1114900.jpg);
     background-size: cover;
+    filter: grayscale(100%);
 }
 h3{
     font-family: 'Righteous', cursive;
@@ -23,13 +24,21 @@ h3{
     text-align: center;
 }
 h1{
+   
     font-family: 'Righteous', cursive;
     color: white;
-    font-size: 50px;
+    font-size: 60px;
+    margin-left: 10%;
+    text-align: left;
    
 }
-
-
+p{
+    font-family: 'Mitr', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 10%;
+    color: white
+}
 
 nav{
     padding-left: 10px;
@@ -52,6 +61,7 @@ nav img {
     padding: 12px;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Mitr', sans-serif;
 }
 
 .navigation-buttons a {
@@ -63,7 +73,7 @@ nav img {
 }
 
 .navigation-buttons-hover li {
-    color:gray;
+    color:#009298;
     text-decoration: none;
     list-style: none;
     font-size: 12px;
@@ -73,7 +83,7 @@ nav img {
 }
 
 .navigation-buttons-hover a {
-    color: gray;
+    color: #009298;
     text-decoration: none;
     list-style: none;
     font-size: 12px;
@@ -81,26 +91,20 @@ nav img {
 }
 
 
-
-
 li.current{
-    color: gray;
+    color: #009298;
+}
+.container{
+    margin-top: 70px;
 }
 .row-1{
     overflow-x: auto;
     display: flex;
     padding: 20px;
+    margin-top: -100px;
     
 }
-.flexcroll {     
-    scrollbar-face-color: #367CD2;
-    scrollbar-shadow-color: #FFFFFF;
-    scrollbar-highlight-color: #FFFFFF;
-    scrollbar-3dlight-color: #FFFFFF;
-    scrollbar-darkshadow-color: #FFFFFF;
-    scrollbar-track-color: #FFFFFF;
-    scrollbar-arrow-color: #FFFFFF;
-}
+
 
 .poster-1{
     width: 280px;
@@ -126,25 +130,51 @@ li.current{
 .poster-4{
     width: 280px;
     height: 400px;
-    background-image: url(../img/poster1.jpg);
+    background-image: url(../img/poster3.jpg);
     background-size: cover;
     margin-left: 20px;
 }
-.section1{
-    width: 50%;
-    height: 40vh;
+.poster-1:hover{
+    width: 280px;
+    height: 400px;
+    background-image: url(../img/poster1.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    
 }
+.poster-2{
+    width: 280px;
+    height: 400px;
+    background-image: url(../img/poster%209.jpg);
+    background-size: cover;
+    margin-left: 20px;
+}
+.poster-3{
+    width: 280px;
+    height: 400px;
+    background-image: url(../img/poster6.jpg);
+    background-size: cover;
+    margin-left: 20px;
+}
+.poster-4{
+    width: 280px;
+    height: 400px;
+    background-image: url(../img/poster3.jpg);
+    background-size: cover;
+    margin-left: 20px;
+}
+
 
 
 footer{
     width: 100%;
-    height: 40px;
+    height: 60px;
     margin: 0px;
     padding: 0px;
     border: 0px;
     background-color: black;
     display: block;
-    bottom: 0;
+    margin-bottom:0 auto;
 }
 
 
@@ -159,6 +189,7 @@ footer{
 
 .social-media-icons{
     float: right;
+    padding: 20px;
 }
 
 .pinterest {
@@ -179,25 +210,29 @@ footer{
 
 .pinterest img{
     float: right;
-    height: 40px;
+    height: 50px;
+    width: 50px;
     padding: 7px;
 }
 
 .instagram img{
     float: right;
-    height: 40px;
+    height: 50px;
+    width: 50px;
     padding: 7px;
 }
 
 .facebook img{
     float: right;
-    height: 40px;
+    height: 50px;
+    width: 50px;
     padding: 7px;
 }
 
 .twitter img{
     float: right;
-    height: 40px;
+    height: 50px;
+    width: 50px;
     padding: 7px;
 }
 
