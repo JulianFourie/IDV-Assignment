@@ -1,223 +1,38 @@
 body{
-    background-color: black;
-
+    margin: 0 auto;
+    padding: 0 auto;
 }
 .outer-con{
     width: 100%;
     height: 100vh;
     background-image: url(../img/astronomy-black-wallpaper-constellation-2150.jpg);
-    -webkit-filter: grayscale(100%); 
+    
+}
+.landing-img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/astronomy-black-wallpaper-constellation-2150.jpg);
     filter: grayscale(100%);
+}
+.form-con{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../img/dark-overlay-on-slider.png);
+    color: white;
+   font-family: 'Jura', sans-serif;
+    font-size: 18px;
+
 
 }
-.overlay{
+.logo-con{
     width: 100%;
-    height: 100vh;
+    height: 30vh;
+    background-image: url(../img/logo_white.png);
     background-size: cover;
-    background-image: url(../img/hero-gradient.png);
-
 }
-
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.logo-1{
-  margin-top: 30%;
-
-}
-
-
-.accordion {
-  
-    box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-    font-family: Arial, Helvetica, sans-serif;
-    border-color: #505050;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 8px;
-    margin: 0 auto;
-    height: 100vh;
-    width: 100%;
-}
-
-.accordion > ul > li,
-.accordion-title,
-.accordion-content,
-.accordion-separator {
-    float: left;
+.form-control{
+    background-color: transparent;
+    border-color: white;
+    border-width: 3px;
     
-}
-
-.accordion > ul > li {
-   
-    margin-right: -700px;
-    margin-bottom: -0px;
-}
-.accordion-select{
-    background-color: black;
-}
-.accordion-select:checked ~ 
-.accordion-separator {
-    margin-right: 700px;
-    margin-bottom: 0px;
-}
-
-.accordion-title,
-.accordion-select  {
-    background-color:black;
-    color: #ffffff;
-    width: 200px;
-    height: 100vh;
-    font-size: 15px;
-    text-align: center;
-    
-}
-
-
-.accordion-select:hover .accordion-title,
-.accordion-select:checked .accordion-title {
-    background-color: #008384;
-}
-
-
-.accordion-content {
-    color: #f5f2f0;
-    height: 100vh;
-    width: 644px;
-    padding: 28px;
-}
-
-.accordion-title,
-.accordion-select:checked ~ .accordion-content {
-    margin-right: 1px;
-    margin-bottom: 1px;
-}
-
-.accordion > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-}
-
-.accordion > ul > li,
-.accordion-title {
-    position: relative;
-}
-
-.accordion-select {
-    cursor: pointer;
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    margin: 0;
-    z-index: 1;
-}
-
-.accordion-title span {
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    white-space: nowrap;
-}
-
-.accordion-content {
-    position: relative;
-    overflow: auto;
-}
-
-.accordion-separator {
-    transition: margin 0.3s ease 0.1s;
-    -o-transition: margin 0.3s ease 0.1s;
-    -moz-transition: margin 0.3s ease 0.1s;
-    -webkit-transition: margin 0.3s ease 0.1s;
-}
-.para-con-1{
-    margin-top: 20%;
-    align-content: center;
-    text-align: center;
-}
-h3{
-    margin-top: 500px;
-}
-form{
-  width: 300px;
-  height: 500px;
-  font-family: sans-serif;
-    margin: auto;
-
-    
-}
-.input{
-    margin-top: 30px;
-    width: 300px;
-    height:30px;
-    border: 3px 3px 3px solid white;
-    background-color: #ffffff00;
-    color: white;
-    float: left;
-    background-image: url(../img/makefg.png);
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-}
-.input2{
-    margin-top: 30px;
-    width: 300px;
-    height:30px;
-    border: 3px 3px 3px solid white;
-    background-color: #ffffff00;
-    color: white;
-    float: left;
-    background-image: url(../img/vector-lock-black-background-5.png);
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-}
-.input3{
-    margin-top: 30px;
-    width: 300px;
-    height:30px;
-    border: 3px 3px 3px solid white;
-    background-color: #ffffff00;
-    color: white;
-    float: left;
-    background-image: url(../img/change_password_white_371277.png);
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-}
-
-
-.login-btn {
-    background-color:black;
-    color: white;
-    border: 1px solid white;
-    padding: 20px 80px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    margin-top: 20px;
-    float: left;
-    margin-left: 30px;
-}
-.login-btn:hover {
-    background-color: #008384;
-    color: white;
-    border: 1px solid white;
-    padding: 20px 80px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    margin-top: 20px;
-    float: left;
-    margin-left: 30px;
 }

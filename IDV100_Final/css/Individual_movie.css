@@ -1,6 +1,8 @@
 body{
+    width: 100%;
     margin: 0px;
     padding: 0px;
+    border: 0px;
     font-family: "Montserrat",sans-serif;
 }
 
@@ -56,8 +58,19 @@ li.current{
 }
 
 
-.video{
+#video-con-xs{
+    height: 500px;
+    float: left;
     background-color: grey;
+}
+
+#video-con-md{
+    height: 500px;
+    background-color: grey;
+}
+
+#video-con-lg{
+    height: 500px;
 }
 
 .add-share-con{
@@ -90,57 +103,119 @@ li.current{
     float: right;
 }
 
+.space-1{
+    height: 186px;
+}
+
+.space-2{
+    height: 63px;
+}
+
+.space-3{
+    height: 50px;
+}
+
+.space-4{
+    height: 50px;
+}
+
+.space-6{
+    height: 230px;
+}
+
+.space-5{
+    height: 50px;
+}
+
+.space-7{
+    height: 280px;
+}
+
+.space-8{
+    height: 54px;
+}
+
+.spacer{
+    height: 50px;
+}
+
+.title{
+    float: left;
+}
+
+.movie-con{
+    height: 280px;
+    background-image: url(../img/nutcracker-and-the-four-realms.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.movie-con-md{
+    height: 280px;
+    background-image: url(../img/nutcracker-and-the-four-realms.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.watchlist-btn{
+    height: 54px;
+    background-image: url(../img/add-to-watchlist-btn.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
 .movie-title{
-    width: 400px;
     height: auto;
-    margin-left: 290px;
     text-align: center;
-    float: left
+    float:left;
 }
 
 .movie-type{
-    width: 500px;
     height: auto;
-    margin-left: 275px;
     float: left;
     color: dimgray;
 }
 
-.star-rating{
-    width: 600px;
+.rating-title{
     height: 50px;
-    background-image: url(../img/rating.png);
     float: left;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 190px;
-    margin-top: 20px;
-}
-
-.movie-info-box{
-    width: 20%;
-    height: 140px;
-    float: left;
-}
-
-.movie-info-box h2{
     text-align: center;
-    margin-top: 40px;
 }
 
-.movie-info-box h1{
+.rating{
+    height: 50px;
+    text-align: center;
+    float: left;
+}
+
+.movie-info-title{
+    height: 50px;
+    text-align: center;
+}
+
+.movie-info{
+    height: 50px;
     text-align: center;
 }
 
 .movie-description{
-    width: 850px;
     height: auto;
     margin-top: 40px;
-    margin-left: 57px;
     text-align: center;
     float: left
 }
+
+.related-movies{
+    height: 50px;
+    float: left;
+}
+
 
 footer{
     width: 100%;

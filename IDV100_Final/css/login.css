@@ -1,0 +1,35 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: black;
+    
+    
+}
+.outer-con{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/astronomy-black-wallpaper-constellation-2150.jpg);
+    filter: grayscale(100%);
+}
+.logo{
+    width: 60%;
+    height: 11vh;
+    background-image: url(../img/logo_white.png);
+    background-size: cover;
+    
+}
+.form{
+    color: white;
+    background-image: url(../img/overlay.html);
+    width: auto;
+    height: 60vh;
+ 
+    
+}
+.form-control{
+     background-color: rgba(0,0,0,0);
+     color: #FFF;
+     border-width: 3px;
+     border-color: white;
+     border-radius: 0px;
+}
