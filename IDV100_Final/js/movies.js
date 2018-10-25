@@ -1,31 +1,48 @@
 $(function() {
     var apiRequest = new XMLHttpRequest();
     
-    apiRequest.open('GET', 'http://www.omdbapi.com/?i=tt3896198&apikey=462d8ac2', true);
-
     
+    
+    var movieSearch = "Dogs"
+    
+    apiRequest.open('GET', 'http://www.omdbapi.com/?apikey=462d8ac2&s="' + movieSearch + '"', true);
+    
+   /* var movieSearch = "Dogs" */
+   /* apiRequest.open('GET', 'http://www.omdbapi.com/?apikey=462d8ac2&i="' + imdbCode + '"', true); */
+
     apiRequest.onload = function(){
          data = JSON.parse(this.response);
-        console.log(data); 
-        
-    }
+         console.log(data); 
     
     
     function createContainers(Title, Year, Rated, Released, Runtime, Genre, Director, Actors, Plot, Poster){
-        $(".nav-con-inner").append("<div class='movie'><div class='image'><img src=" + Poster + "></div><div class='text'>" + Title+ "</div></div>");
         
-        localStorage.setItem("title", Title);
-        localStorage.setItem("year", Year);
-        localStorage.setItem("rated", Rated);
-        localStorage.setItem("released", Released);
-        localStorage.setItem("runtime", Runtime);
-        localStorage.setItem("genre", Genre);
-        localStorage.setItem("director", Director);
-        localStorage.setItem("actors", Actors);
-        localStorage.setItem("plot", Plot);
-        localStorage.setItem("poster", Poster);
+         
+        
+        for( var i = 0; i < data.Search.length; i++){
+            var Title = data.Search[i].Title;
+            var Year = data.Search[i].Year;
+            var Poster = data.Search[i].Poster;
+            var imdbKey = data.Search[i].imdbID;
+            
+            console.log(data.Search[i].Poster);
+           
+            
+            $(".nav-con-inner").append("<div class='movie'><div class='image'><img src=" + Poster + "></div><div class='title'>" + Title + "</div></div>");
+            
+            
+        }
+        
+        
     }
+        
+        
+        
+        createContainers();
+        
+        
     
+    } /* onload apiRequest */
     
     
     

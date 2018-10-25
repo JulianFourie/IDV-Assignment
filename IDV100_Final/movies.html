@@ -5,6 +5,10 @@
         <meta name="author" content="Julian Fourie">
         <meta name="lecturer" content="Mike Maynard">
         
+        <link rel="stylesheet" href="../bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="../jquery/1.12.0/jquery.min.js"></script>
+        <script src="../bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
         <script src="js/jquery-1.11.2/jquery.js"></script>
         <script src="js/jquery-ui-1.11.4/"></script>
         <script src="js/watchlist.js"></script>
@@ -65,10 +69,11 @@
             
             <div class="new-con">
                 <div class="nav-con-inner">
-                    <div class="movie">
-                        <div class="image"></div>
-                        <div class="text">Movie title</div>
-                    </div><!--movie-->
+                    <div class='movie'>
+                        <div class='image'><img src=" + Poster + "></div>
+                        <div class='title'>" + Title + "</div>
+                        
+                    </div>
                 </div><!--nav con inner-->
             </div><!---new releases container-->
         </div><!--main-->
