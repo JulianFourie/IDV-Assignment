@@ -99,6 +99,7 @@ body {
     height: auto;
     float: left;
     margin-right: 30px;
+    text-align: center;
 }
 
 .image{
@@ -107,17 +108,21 @@ body {
 }
 
 .text{
-    width: 100%;
+    width: auto;
     height: 50px;
     color: white;
 }
 
 .overlay{
-    width: 100%; 
+    width: auto; 
     height: 447px;
     float: right;
     background-color: rgb(0,0,0);
-    opacity: 0; 
+    opacity: 0;
+}
+
+.overlay a{
+    text-decoration: none;
 }
 
 .overlay:hover{
@@ -136,6 +141,11 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 30px;
+    word-wrap: normal;
+}
+
+.title p{
+    word-wrap: normal;
 }
 
 .watch-now{
@@ -147,7 +157,7 @@ body {
     border-radius: 10px;
     border-style: groove;
     background-color: rgb(0,0,0);
-    margin-top: 100px;
+    margin-top: 20px;
     padding-top: 10px;
 }
 
@@ -161,13 +171,13 @@ body {
     border-radius: 10px;
     border-style: groove;
     background-color: rgb(50,50,50);
-    margin-top: 100px;
+    margin-top: 20px;
     padding-top: 10px;
 }
 
 .watchlist{
     padding-top: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 25px;
     border-style: groove;
     border-radius: 6px;
@@ -176,18 +186,19 @@ body {
     margin-left: 15%;
     margin-right: 15%;
     float: left;
+    text-decoration: none;
+    color: white;
 }
 
 .watchlist:hover{
     padding-top: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 26px;
     border-style: groove;
     border-radius: 6px;
     width: 70%;
     text-align: center;
     margin-left: 15%;
-    margin-right: 15%;
     float: left;
     background-color: rgb(50,50,50);
     cursor: pointer;
