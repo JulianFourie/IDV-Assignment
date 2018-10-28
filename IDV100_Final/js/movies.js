@@ -26,9 +26,8 @@ $(function() {
             var imdbKey = data.Search[i].imdbID;
             
             console.log(data.Search[i].Poster);
-           
             
-            $(".nav-con-inner").append("<div class='movie'><div class='image'><img src=" + Poster + "></div><div class='title'>" + Title + "</div></div>");
+            $(".nav-con-inner").append("<div class='movie'><div class='image'><img src='" + Poster + "'></div><div class='overlay'><div class='title'><p>" + Title + "</p></div><div class='watch-now' data-key='" + imdbKey + "'><p>WATCH NOW</p></div><div class='watchlist' data-key='" + imdbKey + "'><p>ADD TO WATCHLIST</p></div></div></div>");
             
             
         }
