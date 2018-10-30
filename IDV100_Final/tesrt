@@ -1,0 +1,23 @@
+    
+        
+         /* imdb info fetch */
+        apiRequest2.open('GET', 'http://www.omdbapi.com/?i=' + imdbKey + '&apikey=462d8ac2', true);
+            
+        apiRequest2.onload = function(){
+            dataKey = JSON.parse(this.response);
+            console.log(dataKey);
+        }
+        
+        localStorage.setItem("localTitle", Title);
+        localStorage.setItem("localYear", Year);
+        localStorage.setItem("localRated", Rated);
+        localStorage.setItem("localReleased", Released);
+        localStorage.setItem("localRuntime", Runtime);
+        localStorage.setItem("localGenre", Genre);
+        localStorage.setItem("localPlot", Plot);
+        localStorage.setItem("localPoster", Poster);
+        localStorage.setItem("localLanguage", Language);
+        
+        apiRequest2.send();
+    }
+    
