@@ -121,6 +121,40 @@ li.current{
     transform: translate(-50%, -50%);
 }
 
+.movie-title{
+    width: 200px;
+    height: 35px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 9px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+.date{
+    width: 200px;
+    height: 35px;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 9px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.description{
+    width: 200px;
+    height: 35px;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 9px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
 .watch-btn{
     width: 100px;
     height: 35px;
