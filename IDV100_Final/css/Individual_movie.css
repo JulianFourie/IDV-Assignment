@@ -143,7 +143,46 @@ li.current{
 
 .movie-con{
     height: 280px;
-    background-image: url(../img/nutcracker-and-the-four-realms.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.movie-con-1{
+    height: 280px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.movie-con-2{
+    height: 280px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.movie-con-3{
+    height: 280px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.movie-con-4{
+    height: 280px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.movie-con-5{
+    height: 280px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -152,7 +191,6 @@ li.current{
 
 .movie-con-md{
     height: 280px;
-    background-image: url(../img/nutcracker-and-the-four-realms.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
