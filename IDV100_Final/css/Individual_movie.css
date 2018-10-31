@@ -60,19 +60,9 @@ li.current{
 }
 
 
-#video-con-xs{
-    height: 500px;
+.player{
     float: left;
     background-color: grey;
-}
-
-#video-con-md{
-    height: 500px;
-    background-color: grey;
-}
-
-#video-con-lg{
-    height: 500px;
 }
 
 .add-share-con{
