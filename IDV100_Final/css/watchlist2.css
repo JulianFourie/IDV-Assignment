@@ -101,6 +101,7 @@ li.current{
 
 .normal img{
     width: 100%;
+    min-height: 400px;
     display: inline-block;
     position: relative;
 

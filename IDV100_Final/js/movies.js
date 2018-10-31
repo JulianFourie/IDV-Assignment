@@ -19,10 +19,11 @@ $(function() {
                 var Year = data.Search[i].Year;
                 var Poster = data.Search[i].Poster;
                 var imdbKey = data.Search[i].imdbID;
+                
 
                 console.log(data.Search[i].Poster);
 
-                $(".nav-con-inner").append("<div class='movie'><div class='image'><img src='" + Poster + "'></div><div class='overlay'><div class='title'><p>" + Title + "</p></div><a href='Individual_movie.html'><div class='watch-now' data-key='" + imdbKey + "'><p>WATCH NOW</p></div></a><a href='watchlist2.html'><div class='watchlist' data-key='" + imdbKey + "'><p>ADD TO WATCHLIST</p></div></a></div></div>");
+                $(".nav-con-inner").append("<div class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><a href='Individual_movie.html'><div class='watch-now' data-key='" + imdbKey + "'><p>WATCH NOW</p></div></a><a href='watchlist2.html'><div class='watchlist' data-key='" + imdbKey + "'><p>ADD TO WATCHLIST</p></div></a></div></div>");
             }
 
         }
@@ -35,8 +36,13 @@ $(function() {
             localStorage.setItem("imdbKey", key);
         });
         
+        
+        
+        
         $(".watchlist").on("click", function(){
-            var key = $(this).data("key");
+            console.log($(this).find("#getTitle").text());
+            var key = [];
+            key.push($(this).data("key"));
             console.log(key);
             localStorage.setItem("imdbKey", key);
         });
@@ -45,6 +51,9 @@ $(function() {
     
     
     apiRequest.send();
+    
+    
+   
 });
 
 /* PLEASE READ THIS WHEN IMPLEMENTING THE API IN YOUR PAGE 
