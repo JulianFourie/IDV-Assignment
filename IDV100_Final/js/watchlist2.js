@@ -1,45 +1,47 @@
 $(function(){
+    
+    $(".movie").hide();
+    
     console.log("Document Ready");
     
-     var keyArray = [];
+    var watchlistArray = [];
     
-    keyArray.push(localStorage.getItem("imdbKey"));
+    console.log(localStorage.getItem("imdbKey"));
     
-    console.log(keyArray);
     
-     $(".movie").hide();
-    
-    for(var i=0; i < keyArray.length; i++){
+            for(var i=0; i < localStorage.getItem("imdbKey").length; i++){
 
-            var apiRequest = new XMLHttpRequest();
-
-            apiRequest.open('GET', 'http://www.omdbapi.com/?i=' + keyArray[i] + '&apikey=462d8ac2&', true);
-        
-
-            apiRequest.onload = function(){
-                data = JSON.parse(this.response);
-                console.log(data);
-
-                var Poster = data.Poster;
-                var Title = data.Title;
-                var Year = data.Year;
-
-
-            console.log(Title);
+                watchlistArray.push(localStorage.getItem("imdbKey"));
                 
-            function createMovie(){
-
-                $(".content").append("<div class='movie col-xs-12 col-md-4 col-lg-3 col-centered'><div class='normal'><img alt='cover'src='" + Poster + "'></div><!--normal--><div class='hover'><div class='buttons'><div class='movie-title'><p>"+ Title +"</p></div><!--movie-title--><div class='date'><p>("+ Year +")</p></div><!--date--><div class='watch-btn'><p>WATCH</p></div><!--watch-btn--><div class='remove-btn'><p>REMOVE</p></div><!--remove-btn--></div><!--buttons--></div><!--hover--></div><!--movie-->");
-
-    
-            }
-                createMovie();
-            }
-            apiRequest.send();
+                var apiRequest = 'http://www.omdbapi.com/?i=' + watchlistArray[i] + '&apikey=462d8ac2&'
         
-        }
+        $.getJSON(apiRequest, moviecallback);
+
+                function moviecallback(data){
+                
+                    console.log(data);
+                 
+                    var Poster = data.Poster;
+                    var Title = data.Title;
+                    var Year = data.Year;
+
+
+                console.log(Title);
+
+                function createMovie(){
+
+                    $(".content").append("<div class='movie col-xs-12 col-md-4 col-lg-3 col-centered'><div class='normal'><img alt='cover'src='" + Poster + "'></div><!--normal--><div class='hover'><div class='buttons'><div class='movie-title'><p>"+ Title +"</p></div><!--movie-title--><div class='date'><p>("+ Year +")</p></div><!--date--><div class='watch-btn'><p>WATCH</p></div><!--watch-btn--><div class='remove-btn'><p>REMOVE</p></div><!--remove-btn--></div><!--buttons--></div><!--hover--></div><!--movie-->");
+
+
+                }
+                    createMovie();
+                }
+                apiRequest.send();
+
+
+            }
     
-     $(".navigation").find("img").on("mouseenter", function(){
+    $(".navigation").find("img").on("mouseenter", function(){
             $(this).attr("src", "../img/logo_white_hover.png");
         });
     
@@ -57,7 +59,7 @@ $(function(){
             $(this).parent().addClass("navigation-buttons");
         });
     
-        $(".hover").hide();
+    $(".hover").hide();
   
     
     $(".movie").on("mouseenter", function(){

@@ -83,9 +83,10 @@ $(function() {
     $(".watchlist").on("click", function(){
         console.log("clicked add");
         var keyArray = [];
+        var key;
         keyArray.push($(this).data("key"));
         console.log(keyArray);
-        localStorage.setItem("imdbKey", keyArray);
+        localStorage.setItem("imdbKey", JSON.stringify(keyArray));
     });
     
     
