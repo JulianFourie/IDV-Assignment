@@ -15,7 +15,6 @@ $(function(){
 
             apiRequest.open('GET', 'http://www.omdbapi.com/?i=' + keyArray[i] + '&apikey=462d8ac2&', true);
         
-            apiRequest.send();
 
             apiRequest.onload = function(){
                 data = JSON.parse(this.response);
@@ -36,6 +35,7 @@ $(function(){
             }
                 createMovie();
             }
+            apiRequest.send();
         
         }
     

@@ -21,25 +21,33 @@
         <title>GalaxyMovies | Movies</title>
     </head>
     <body>
-        <div class="header">
-            <h2 class="filter">Filter</h2>
-            <div class="logo">
-                <img alt="Galaxy Movies" src="img/logo%20white.png">
-            </div><!--logo-->
-        </div><!--header-->
+        <nav class="navigation navbar navbar-inverse navbar-fixed-top">
+        
+                <a href="movies.html"><img alt="logo"src="../img/logo_white.png"></a>
+
+
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+                <div id="navbar-items" class="navigation navbar-items navbar-right navbar-collapse collapse">
+                    <ul class="navigation-buttons nav navbar-nav">
+                        <a href="#"><li>Home</li></a>
+                        <a href="movies.html"><li>Movies</li></a> 
+                        <a href="watchlist2.html" class="active"><li>Watchlist</li></a> 
+                    </ul><!--navigation-buttons-list-->
+                </div><!--navigation--> 
+            
+        </nav>
         
         <div class="nav-bar">
             <div class="nav-con">
                 <div class="fifth">
-                    <a class="selection">
-                        <h3>User 5 Star</h3>
-                    </a><!--5 star-->
-                </div><!--fifth-->
-                
-                <div class="fifth">
-                    <a class="selection">
-                        <h3>IMDb Rating</h3>
-                    </a><!--5 star-->
+                    <span class="glyphicon glyphicon-search"></span>
+                    <input class="input" id="searchfield" type="text" placeholder="Search...">
                 </div><!--fifth-->
                 
                 <div class="fifth">
@@ -67,7 +75,7 @@
             <div class="browse">
                 <h4>Browse</h4>
             </div><!--browse text-->
-            <h3>New Releases</h3>
+            <h3 class="text-response">New Releases</h3>
             
             <div class="new-con">
                 <div class="nav-con-inner">
