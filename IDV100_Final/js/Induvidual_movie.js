@@ -139,8 +139,8 @@ $(function() {
               var player;
               function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
-                  height: '800',
-                  width: '1900',
+                  height: '700px',
+                  width: '100%',
                   videoId: 'USPd0vX2sdc',
                   events: {
                     'onReady': onPlayerReady,
