@@ -1,8 +1,8 @@
 $(function(){
     
-    $(".movie").hide();
+    //$(".movie").hide();
     
-    console.log("Document Ready");
+    /*console.log("Document Ready");
     
     var watchlistArray = [];
     
@@ -39,7 +39,7 @@ $(function(){
                 apiRequest.send();
 
 
-            }
+            } */
     
     $(".navigation").find("img").on("mouseenter", function(){
             $(this).attr("src", "../img/logo_white_hover.png");
