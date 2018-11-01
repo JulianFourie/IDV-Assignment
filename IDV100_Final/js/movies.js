@@ -20,7 +20,7 @@ $(function() {
 
                     console.log(data.Search[i].Poster);
 
-                    $(".nav-con-inner").append("<div class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><a href='Individual_movie.html'><div class='watch-now' data-key='" + imdbKey + "'><p>WATCH NOW</p></div></a><a href='watchlist2.html'><div class='watchlist' data-key='" + imdbKey + "'><p>ADD TO WATCHLIST</p></div></a></div></div>");
+                    $(".nav-con-inner").append("<div class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><a href='Individual_movie.html'><div class='watch-now' data-key='" + imdbKey + "'><p>WATCH NOW</p></div></a><div class='watchlist' data-key='" + imdbKey + "'><button>ADD TO WATCHLIST</button></div></div></div>");
                 }
 
             }
@@ -61,7 +61,7 @@ $(function() {
                         
                         
 
-                    $(".nav-con-inner").append("<div class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><a href='Individual_movie.html'><div class='watch-now' data-key='" + imdbKey + "'><p>WATCH NOW</p></div></a><a href='watchlist2.html'><div class='watchlist' data-key='" + imdbKey + "'><p>ADD TO WATCHLIST</p></div></a></div></div>");
+                    $(".nav-con-inner").append("<div class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><div class='watch-now' data-key='" + imdbKey + "'><a>WATCH NOW</a></div><div class='watchlist' data-key='" + imdbKey + "'><button>ADD TO WATCHLIST</button></div></div></div>");
                 }
 
             }
@@ -73,20 +73,24 @@ $(function() {
 
     });
     
-    $(".watch-now").on("click", function(){
+    $(".nav-con-inner").on("click", "a", function(){
         console.log("clicked watch");
         var key = $(this).data("key");
         console.log(key);
         localStorage.setItem("imdbKey", key);
+        window.location.href = "../pages/Individual_movie.html";
+       
+        
     });
         
-    $(".watchlist").on("click", function(){
+    $(".nav-con-inner").on("click", "button", function(){
         console.log("clicked add");
         var keyArray = [];
         var key;
         keyArray.push($(this).data("key"));
         console.log(keyArray);
         localStorage.setItem("imdbKey", JSON.stringify(keyArray));
+         window.location.href = "../pages/watchlist2.html";
     });
     
     
