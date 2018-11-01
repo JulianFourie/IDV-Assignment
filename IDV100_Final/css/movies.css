@@ -3,7 +3,10 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat",sans-serif;
-    background-image: url(../img/Background.png)
+    background-image: url(../img/back%20hover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 930px;
 }
 
 .header {
@@ -252,4 +255,10 @@ nav img {
     float: left;
     background-color: rgb(50,50,50);
     cursor: pointer;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border: 0px;
 }

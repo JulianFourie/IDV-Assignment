@@ -16,10 +16,9 @@ $(function() {
                     var Year = data.Search[i].Year;
                     var Poster = data.Search[i].Poster;
                     var imdbKey = data.Search[i].imdbID;
-
-
+                    
                     console.log(data.Search[i].Poster);
-
+                    
                     $(".nav-con-inner").append("<div class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><a href='Individual_movie.html'><div class='watch-now' data-key='" + imdbKey + "'><p>WATCH NOW</p></div></a><div class='watchlist' data-key='" + imdbKey + "'><button>ADD TO WATCHLIST</button></div></div></div>");
                 }
 
@@ -35,11 +34,11 @@ $(function() {
         console.log("clicked search");
         console.log(movieSearch);
         movieSearch = $(".input").val();
-            
+        
         var apiRequestSearch = new XMLHttpRequest();
-            
+        
         apiRequestSearch.open('GET', 'http://www.omdbapi.com/?apikey=462d8ac2&s="' + movieSearch + '"', true);
-            
+        
         $(".movie").remove();
             
         $(".text-response").text("Search Results");
@@ -78,19 +77,14 @@ $(function() {
         var key = $(this).data("key");
         console.log(key);
         localStorage.setItem("imdbKey", key);
-        window.location.href = "../pages/Individual_movie.html";
-       
-        
+        window.location.href = "../pages/Individual_movie.html"; 
     });
-        
+    
     $(".nav-con-inner").on("click", "button", function(){
         console.log("clicked add");
-        var keyArray = [];
-        var key;
-        keyArray.push($(this).data("key"));
-        console.log(keyArray);
-        localStorage.setItem("imdbKey", JSON.stringify(keyArray));
-         window.location.href = "../pages/watchlist2.html";
+        var key = $(this).parent().data("key");
+        localStorage.setItem("imdbKey", key);
+        window.location.href = "../pages/watchlist2.html";
     });
     
     
