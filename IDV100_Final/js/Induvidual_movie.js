@@ -3,6 +3,7 @@ $(function() {
     console.log("ready");
         
         var key = localStorage.getItem("imdbKey");
+    console.log(key);
     
         
         /*var apiRequest = 'http://www.omdbapi.com/?i=' + key + '&apikey=462d8ac2&'*/
