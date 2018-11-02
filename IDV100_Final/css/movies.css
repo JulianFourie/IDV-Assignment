@@ -114,6 +114,14 @@ nav img {
     margin-left: 1%;
 }
 
+.selection:hover{
+	cursor:pointer;
+	border:2px;
+	border-color:white;
+	border-style:solid;
+	border-radius: 10px;
+}
+
 .selection h3{
     color: white;
     margin-top: 8px;

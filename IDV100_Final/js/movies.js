@@ -11,15 +11,17 @@ $(function() {
 
             function createContainers(Title, Year, Poster, imdbKey){
 
-                for( var i = 0; i < data.Search.length; i++){
+                for(var i = 0; i < data.Search.length; i++){
                     var Title = data.Search[i].Title;
                     var Year = data.Search[i].Year;
                     var Poster = data.Search[i].Poster;
                     var imdbKey = data.Search[i].imdbID;
+					
+						
+					$(".nav-con-inner").append("<div data-year='" + Year + "' class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><a href='Individual_movie.html'><div class='watch-now' data-key='" + imdbKey + "'><p>WATCH NOW</p></div></a><div class='watchlist' data-key='" + imdbKey + "'><button>ADD TO WATCHLIST</button></div></div></div>");
+
                     
-                    console.log(data.Search[i].Poster);
                     
-                    $(".nav-con-inner").append("<div class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><a href='Individual_movie.html'><div class='watch-now' data-key='" + imdbKey + "'><p>WATCH NOW</p></div></a><div class='watchlist' data-key='" + imdbKey + "'><button>ADD TO WATCHLIST</button></div></div></div>");
                 }
 
             }
@@ -54,13 +56,14 @@ $(function() {
                     var Year = data2.Search[i].Year;
                     var Poster = data2.Search[i].Poster;
                     var imdbKey = data2.Search[i].imdbID;
+					var Genre = data2.Search[i].Genre;
 
 
                     console.log(data2.Search[i].Poster);
                         
                         
 
-                    $(".nav-con-inner").append("<div class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><div class='watch-now' data-key='" + imdbKey + "'><a>WATCH NOW</a></div><div class='watchlist' data-key='" + imdbKey + "'><button>ADD TO WATCHLIST</button></div></div></div>");
+                    $(".nav-con-inner").append("<div data-year='" + Year + "' class='movie'><div class='image'><img id='getPoster' src='" + Poster + "'></div><div class='overlay'><div class='title'><p id='getTitle'>" + Title + "</p></div><div class='watch-now' data-key='" + imdbKey + "'><a>WATCH NOW</a></div><div class='watchlist' data-key='" + imdbKey + "'><button>ADD TO WATCHLIST</button></div></div></div>");
                 }
 
             }
@@ -86,6 +89,8 @@ $(function() {
         localStorage.setItem("imdbKey", key);
         window.location.href = "../pages/watchlist2.html";
     });
+
+	
     
     
     
